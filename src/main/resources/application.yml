@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: todo-app
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: a
+    password: a
+    url: "jdbc:h2:mem:todoapp;DB_CLOSE_ON_EXIT=FALSE"
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+
+
